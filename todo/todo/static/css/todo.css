@@ -1,0 +1,82 @@
+body {
+    /* background: url('https://unsplash.com/photos/a-cup-of-coffee-and-a-notebook-on-a-table-A7TyK7mx9I8') no-repeat center center fixed; */
+    background-color: #000;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+.form-control:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    /* border-color: #007bff; */
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #4f46e5;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4e46e59f;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #b52a38;
+}
+
+
+/* Wrapper to position icon */
+.date-wrapper {
+    position: relative;
+}
+
+.date-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    /* hide native icon */
+    z-index: 1;
+}
+
+/* White icon overlay */
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+}
+
+.list-group-item {
+    background-color: rgba(79, 79, 79, 0.105);
+    color: #fff;
+    border: none;
+}
+
+.list-group-item:hover {
+    box-shadow: 0 0 15px 5px rgba(106, 106, 106, 0.2);
+}
